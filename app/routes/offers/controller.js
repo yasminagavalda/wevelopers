@@ -6,6 +6,7 @@ angular.module('wevelopersApp')
                 .then(function(response) {
                     console.log(response)
                     $scope.offerDetails = response;
+                    $location.path('/details')
                 })
         }
     })
