@@ -9,4 +9,8 @@ angular.module('wevelopersApp')
                 templateUrl: 'app/routes/offers/template.html',
                 controller: 'offersController'
             })
+            .when('/details', {
+                templateUrl: 'app/routes/details/template.html',
+                //controller: 'detailsController'
+            })
     })

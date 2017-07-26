@@ -12,6 +12,7 @@ angular.module('wevelopersApp')
                             offers = offersIngenieros.concat(offersInformatica)
                             $rootScope.offers = offers
                             $location.path('/offers')
+                            console.log(offers)
                             
                         })
                 })

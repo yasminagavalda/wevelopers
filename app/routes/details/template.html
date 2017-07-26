@@ -1,35 +1,36 @@
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<!--     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
+ 
             <div class="navbar-header">
                 <img class = "navimg pull-left" src="WEVELOPER_LOGO.png">
                 <a class="navbar-brand badmargin" href="#">Wevelopers</a>
             </div>
         </div>
-    </nav>
+    </nav> -->
 
-    <div class="container" ng-controller="searchOffersController">
+   
+
+    <div class="container">
         <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">Relevant Offers
-                    <!--<small>Secondary Text</small> -->
-                </h1>
+            <!-- Blog Post Content Column -->
+            <div class="col-lg-8">
+                <!-- Title -->
+                <h1>{{offerDetails.title}}</h1>
+                <p class="lead">
+                    by <a href="{{offerDetails.profile.web}}">{{offerDetails.profile.name}}</a><span> · {{offerDetails.city}}, {{offerDetails.province.value}}</span>
+                </p>
+                <hr>
+                <p><span class="glyphicon glyphicon-time"></span> Posted on {{offerDetails.updateDate}}</p>
+                <hr>
+                <p class="lead"> {{offerDetails.description}}</p>
+                <p> {{offerDetails.studiesMin.value}} </p>
+                <p> {{offerDetails.minRequeriments}} </p>
+                <p> {{offerDetails.experienceMin}} </p>
+                <hr>
             </div>
         </div>
-
-        <div class="row">
-            <div class="col-md-0">
-            </div>
-            <div ng-repeat="offer in offers">
-                <h3>{{ offer.title }}</h3>
-                <h4>{{ offer.profile.name }} | {{ offer.city }}, {{ offer.province.value }}</h4>
-                <p>{{ offer.updateDate }}</p>
-                <p>{{ offer.minRequirements }}</p>
-                <a class="btn btn-primary" href="">View Details<span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-        </div>
-        
     </div>
+
     <footer class = "foot container-fluid">
                 <p>Copyright &copy; WEVELOPERS 2017</p>
     </footer>
