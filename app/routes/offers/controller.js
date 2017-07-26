@@ -11,16 +11,23 @@ angular.module('wevelopersApp')
                         .then(function(offersInformatica) {
 
                             offers = offersIngenieros.concat(offersInformatica)
-                            $rootScope.offers = offers
-                            $location.path('/offers')
-                            console.log(offers)
+                            if (offers.length !== 0) {
+                                $rootScope.offers = offers
+                                $location.path('/offers')
+                                console.log(offers)
+                            } else {
+                                $rootScope.notFound = 'No se han encontrado ofertas paras los parámetros de busqueda introducidos'
+                                $location.path('/offers')
+                            }
+                            
                             
                         })
                 })
 
 
+
         }
-        
+
         $scope.searchDetails = function(offerID) {
             infojobsFactory.getDetails(offerID)
                 .then(function(response) {
