@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="wevelopersApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Offers List</title>
+    
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+        .foot{
+            color: #fff;
+            clear: both;
+            position: fixed;
+            width: 100%;
+            background-color: #DD0E1C;
+            margin-top: 21%
+
+        }
+        .navimg{
+            width: 4%;
+            margin-right: 1%;
+            margin-top: 3px;
+        }
+        .nav-header{
+            display: inline-block;
+        }
+        .page-header
+    </style>
+    <link href="css/1-col-portfolio.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <img class = "navimg pull-left" src="WEVELOPER_LOGO.png">
+                <a class="navbar-brand badmargin" href="#">Wevelopers</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" ng-controller="searchOffersController">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Relevant Offers
+                    <!--<small>Secondary Text</small> -->
+                </h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-0">
+            </div>
+            <div ng-repeat="offer in offers">
+                <h3>{{ offer.title }}</h3>
+                <h4>{{ offer.profile.name }} | {{ offer.city }}, {{ offer.province.value }}</h4>
+                <p>{{ offer.updateDate }}</p>
+                <p>{{ offer.minRequirements }}</p>
+                <a class="btn btn-primary" href="">View Details<span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        
+    </div>
+    <footer class = "foot container-fluid">
+                <p>Copyright &copy; WEVELOPERS 2017</p>
+    </footer>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/controllers/controllerOffers.js"></script>
+    <script src="app/factory/factory.js"></script>
+
+</body>
+</html>

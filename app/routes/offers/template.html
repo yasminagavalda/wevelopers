@@ -1,0 +1,13 @@
+<div class="container-fluid">
+
+    <div ng-repeat="offer in offers">
+            <h3>{{ offer.title }}</h3>
+            <h4>{{ offer.profile.name }} | {{ offer.city }}, {{ offer.province.value }}</h4>
+            <p>{{ offer.updateDate }}</p>
+            <p>{{ offer.minRequirements }}</p>
+            <a class="btn btn-primary" href="">View Details<span class="glyphicon glyphicon-chevron-right"></span></a>
+        </div>
+    </div>
+
+   
+</div>
