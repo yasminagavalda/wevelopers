@@ -1,0 +1,144 @@
+html {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+}
+
+body {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px
+}
+
+form {
+    display: inline-block;
+}
+
+.intro-header {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+}
+
+.intro-message {
+    position: relative;
+}
+
+.intro-message>h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px white;
+    font-size: 5em;
+}
+
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin: auto;
+}
+
+.intro-message>h3 {
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+@media(max-width:767px) {
+    .intro-message {
+        padding-bottom: 15%;
+    }
+    .intro-message>h1 {
+        font-size: 3em;
+    }
+    ul.intro-social-buttons>li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    ul.intro-social-buttons>li:last-child {
+        margin-bottom: 0;
+    }
+    .intro-divider {
+        width: 100%;
+    }
+}
+
+button {
+    background: #d9d9d9;
+    border-radius: 5px;
+    color: #DD0E1C;
+    height: 32px;
+    margin-top: 9%;
+    padding-bottom: 1%;
+}
+
+.wall {
+    background: url('../img/intro-bg.jpg') no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+    background-size: cover;
+}
+
+input {
+    background: #d9d9d9;
+    border-radius: 5px;
+    width: 28%;
+    height: 38px;
+    margin-top: 3%;
+    font-size: 150%;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    ;
+}
+
+h1 {
+    color: #DD0E1C;
+    text-shadow: 1px 2px 3px #666;
+}
+
+.btn {
+    text-align: center;
+}
+
+.foot {
+    color: #fff;
+    clear: both;
+    position: fixed;
+    width: 100%;
+    background-color: #DD0E1C;
+    margin-top: 21%
+}
+
+.form {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.navimg {
+    width: 4%;
+    margin-right: 1%;
+    margin-top: 3px;
+}
+
+.nav-header {
+    display: inline-block;
+}
+
+
+/* -------------------------- */
+.my-navbar {
+    margin:0
+}
