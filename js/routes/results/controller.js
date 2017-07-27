@@ -34,4 +34,7 @@ angular.module('wevelopersApp')
                             $scope.notFound = 'No se han encontrado ofertas paras los parámetros de busqueda introducidos'
                             $location.path('/search-results' + query)
                           }
-    }
+                        })
+                })
+      }
+    })
