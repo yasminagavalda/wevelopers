@@ -1,7 +1,8 @@
 angular.module('wevelopersApp')
     .controller('HomeController', function($scope, $rootScope, infojobsFactory, $location) {
         $scope.searchOffers = function(query) {
-            var offers = []
+            $rootScope.offers = []
+            $rootScope.notFound = ''
             infojobsFactory.getOffersIngenieros(query)
                 .then(function(offersIngenieros) {
                     infojobsFactory.getOffersInformatica(query)
