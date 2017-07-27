@@ -32,7 +32,7 @@
             <h4>{{ offer.author.name }} | {{ offer.city }}, {{ offer.province.value }}</h4>
             <p>{{ offer.updateDate }}</p>
             <p>{{ offer.minRequirements }}</p>
-            <button ng-click="searchDetails(offer.id)" href="">View Details<span class="glyphicon glyphicon-chevron-right"></span></button>
+            <a href="#!/details/{{offer.id}}"><button>View Details<span class="glyphicon glyphicon-chevron-right"></span></button></a>
             <hr>
         </div>
     </div>
