@@ -8,7 +8,7 @@
                 by <a href="{{offerDetails.profile.web}}">{{offerDetails.profile.name}}</a><span> · {{offerDetails.city}}, {{offerDetails.province.value}}</span>
             </p>
             <hr>
-            <p><span class="glyphicon glyphicon-time"></span> Updated at {{offerDetails.updateDate}}</p>
+            <p><span class="glyphicon glyphicon-time"></span> Updated at {{offerDetails.updateDate | date}}</p>
             <hr>
             <p class="lead"> {{offerDetails.description}}</p>
             <p class="lead"> Salary: {{offerDetails.minPay.amountValue}} - {{offerDetails.maxPay.amountValue}} {{offerDetails.minPay.periodValue}}</p>
