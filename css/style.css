@@ -127,14 +127,15 @@
     }
     
     .foot {
-        margin-bottom: 0;
-        display: flex;
-        align-items: flex-end;
         color: #fff;
         clear: both;
         width: 100%;
-        background-color: #DD0E1C;
+        background-color: #DD0E1C ;
         padding-top: 0.5%;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 0;
     }
     
     .form {
