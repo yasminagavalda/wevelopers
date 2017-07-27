@@ -1,57 +1,50 @@
 <style>
-    .foot {
-        color: #fff;
-        clear: both;
-        position: fixed;
-        width: 100%;
-        background-color: #DD0E1C;
-        margin-top: 21%
-    }
+.foot {
+    color: #fff;
+    clear: both;
+    position: fixed;
+    width: 100%;
+    background-color: #DD0E1C;
+    margin-top: 21%
+}
 
-    .form {
-        margin: 0px;
-        padding: 0px;
-        display: flex;
-        align-items: center;
-    }
+.form {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+}
 
-    .navimg {
-        width: 4%;
-        margin-right: 1%;
-        margin-top: 3px;
-    }
+.navimg {
+    width: 4%;
+    margin-right: 1%;
+    margin-top: 3px;
+}
 
-    .nav-header {
-        display: inline-block;
-    }
+.nav-header {
+    display: inline-block;
+}
 </style>
-
-
-<div class="wall">
-    <div class="intro-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="intro-message">
-                        <hr class="intro-divider">
-                        <form style="display: inline-block;">
-                            <div class="row">
+<div class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="intro-message">
+                    <form>
+                        <div class="row">
                             <div class="col-lg-8">
-                            <input ng-model="query" class="form-control">
+                                <input ng-model="query" class="input-search form-control">
                             </div>
                             <div class="col-lg-4">
-                            <button ng-click="searchOffers(query)" class="btn btn-primary ">Submit</button>
+                                <button ng-click="searchOffers(query)" class="btn btn-primary ">Submit</button>
                             </div>
-                            </div>
-                        </form>
-                    </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
-    <!-- /.container -->
 </div>
-
 <div class="container">
     <div class="row">
         <div class="col-lg-12">
