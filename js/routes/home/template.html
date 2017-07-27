@@ -7,13 +7,13 @@
                         <h1>Wevelopers</h1>
                         <h3>A Place to share and find job</h3>
                         <hr class="intro-divider">
-                        <form style="display: inline-block;">
+                        <form id="homeForm">
                             <div class="row">
                                 <div class="col-lg-8">
-                                    <input ng-model="query" class="input-home form-control" id="inputSearch">
+                                    <input ng-model="query" class="form-control">
                                 </div>
                                 <div class="col-lg-4">
-                                    <button ng-click="searchOffers(query)" class="btn btn-primary form-control">Submit</button>
+                                    <button ng-click="searchOffers(query)">Submit</button>
                                 </div>
                             </div>
                         </form>
