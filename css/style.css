@@ -16,6 +16,10 @@
         font-weight: 700;
     }
     
+    #details {
+        margin-bottom: 8%;
+    }
+    
     #inputresults {
         margin-top: 2%;
     }
@@ -126,11 +130,15 @@
         text-align: center;
     }
     
+    #description {
+        text-align: justify;
+    }
+    
     .foot {
         color: #fff;
         clear: both;
         width: 100%;
-        background-color: #DD0E1C ;
+        background-color: #DD0E1C;
         padding-top: 0.5%;
         position: fixed;
         right: 0;
