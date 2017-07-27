@@ -1,23 +1,23 @@
-<div class="container">
+<div class="container" id = "details">
     <div class="row">
         <!-- Blog Post Content Column -->
         <div class="col-lg-8">
             <!-- Title -->
             <h2>{{offerDetails.title}}</h2>
-            <p class="lead">
+            <h4>
                 by <a href="{{offerDetails.profile.web}}">{{offerDetails.profile.name}}</a><span> · {{offerDetails.city}}, {{offerDetails.province.value}}</span>
-            </p>
+            </h4>
             <hr>
             <p><span class="glyphicon glyphicon-time"></span> Updated at {{offerDetails.updateDate | date}}</p>
             <hr>
-            <p class="lead"> {{offerDetails.description}}</p>
-            <p class="lead"> Salary: {{offerDetails.minPay.amountValue}} - {{offerDetails.maxPay.amountValue}} {{offerDetails.minPay.periodValue}}</p>
-            <p> Studies: {{offerDetails.studiesMin.value}} </p>
-            <p> Requerido: {{offerDetails.minRequeriments}} </p>
-            <p> Experiencia mínima: {{offerDetails.experienceMin.value}} </p>
-
-            <a ng-href="{{offerDetails.link}}"><button>Go to the job offer</button></a>
+            <p class="lead" id="description"> {{offerDetails.description}}</p>
             <hr>
+            <p> Salary: {{offerDetails.minPay.amountValue}} - {{offerDetails.maxPay.amountValue}} {{offerDetails.minPay.periodValue}}</p>
+            <p> Studies: {{offerDetails.studiesMin.value}} </p>
+            <p> Requerido: {{offerDetails.requerimentsMin}} </p>
+            <p> Experiencia mínima: {{offerDetails.experienceMin.value}} </p>
+            <hr>
+            <a ng-href="{{offerDetails.link}}" target="_blank"><button>Go to the job offer</button></a>
         </div>
     </div>
 </div>
