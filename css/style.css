@@ -5,15 +5,23 @@
         height: 100%;
     }
     
-    .bodys,
-    .h1s,
-    .h2s,
-    .h3s,
-    .h4s,
-    .h5s,
-    .h6s {
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6s {
         font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-weight: 700;
+    }
+    
+    #inputresults {
+        margin-top: 2%;
+    }
+    
+    h2 {
+        color: #DD0E1C;
     }
     
     body {
@@ -119,12 +127,14 @@
     }
     
     .foot {
+        margin-bottom: 0;
+        display: flex;
+        align-items: flex-end;
         color: #fff;
         clear: both;
-        position: fixed;
         width: 100%;
         background-color: #DD0E1C;
-        margin-top: 21%
+        padding-top: 0.5%;
     }
     
     .form {
@@ -148,6 +158,8 @@
     .my-navbar {
         margin: 0;
         border: 0px;
+        border-bottom: .5px solid #DD0E1C;
+        border-radius: 0px;
     }
     
     .btn-warning .badge {
@@ -239,4 +251,8 @@
         .navimg {
             visibility: hidden;
         }
+    }
+    
+    #offers {
+        padding: 15px;
     }
