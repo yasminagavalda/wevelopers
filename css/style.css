@@ -96,6 +96,12 @@
         border: 1px solid #DD0E1C;
         color: #fff;
         height: 33px;
+        transition: .5s;
+    }
+    
+    .form-control:active {
+        box-shadow: none;
+        border: 0px;
     }
     
     .wall {
@@ -113,12 +119,6 @@
         height: 38px;
         font-size: 150%;
         font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        ;
-    }
-    
-    input:focus,
-    input.focus {
-        border-color: #761c19;
     }
     
     h1 {
@@ -132,6 +132,10 @@
     
     #description {
         text-align: justify;
+    }
+    
+    #author {
+        float: right;
     }
     
     .foot {
@@ -169,76 +173,6 @@
         border: 0px;
         border-bottom: .5px solid #DD0E1C;
         border-radius: 0px;
-    }
-    
-    .btn-warning .badge {
-        color: #f0ad4e;
-        background-color: #fff;
-    }
-    
-    .btn-danger {
-        color: #fff;
-        background-color: #d9534f;
-        border-color: #d43f3a;
-    }
-    
-    .btn-danger:focus,
-    .btn-danger.focus {
-        color: #fff;
-        background-color: #c9302c;
-        border-color: #761c19;
-    }
-    
-    .btn-danger:hover {
-        color: #fff;
-        background-color: #c9302c;
-        border-color: #ac2925;
-    }
-    
-    .btn-danger:active,
-    .btn-danger.active,
-    .open>.dropdown-toggle.btn-danger {
-        color: #fff;
-        background-color: #c9302c;
-        border-color: #ac2925;
-    }
-    
-    .btn-danger:active:hover,
-    .btn-danger.active:hover,
-    .open>.dropdown-toggle.btn-danger:hover,
-    .btn-danger:active:focus,
-    .btn-danger.active:focus,
-    .open>.dropdown-toggle.btn-danger:focus,
-    .btn-danger:active.focus,
-    .btn-danger.active.focus,
-    .open>.dropdown-toggle.btn-danger.focus {
-        color: #fff;
-        background-color: #ac2925;
-        border-color: #761c19;
-    }
-    
-    .btn-danger:active,
-    .btn-danger.active,
-    .open>.dropdown-toggle.btn-danger {
-        background-image: none;
-    }
-    
-    .btn-danger.disabled:hover,
-    .btn-danger[disabled]:hover,
-    fieldset[disabled] .btn-danger:hover,
-    .btn-danger.disabled:focus,
-    .btn-danger[disabled]:focus,
-    fieldset[disabled] .btn-danger:focus,
-    .btn-danger.disabled.focus,
-    .btn-danger[disabled].focus,
-    fieldset[disabled] .btn-danger.focus {
-        background-color: #d9534f;
-        border-color: #d43f3a;
-    }
-    
-    .btn-danger .badge {
-        color: #d9534f;
-        background-color: #fff;
     }
     
     .navbar-inverse {
