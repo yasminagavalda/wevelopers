@@ -1,6 +1,7 @@
 angular.module('wevelopersApp')
     .controller('SearchResultsController', function ($scope, $routeParams, infojobsFactory, $location) {
       var query = $routeParams.query
+      $scope.query1 = $routeParams.query
 
       infojobsFactory.getOffersIngenieros(query)
         .then(function (offersIngenieros) {

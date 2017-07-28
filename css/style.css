@@ -207,6 +207,10 @@
     .github-links:hover {
         color: white;
     }
+
+    .company-logo {
+        width: 100px;
+    }
     
     #offers {
         padding: 15px;
