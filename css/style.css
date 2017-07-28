@@ -51,12 +51,21 @@
     
     .intro-message {
         position: relative;
+        margin-top: 20px;
     }
     
     .intro-message>h1 {
         margin: 0;
         text-shadow: 2px 2px 3px white;
         font-size: 5em;
+    }
+
+    .wallinside {
+        background-image: linear-gradient(96deg, #fff 2%, #ffe6e6 98%);
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        background-size: cover;
     }
     
     .intro-divider {

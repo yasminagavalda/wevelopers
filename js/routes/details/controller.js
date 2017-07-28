@@ -21,6 +21,7 @@ angular.module('wevelopersApp')
           	$scope.requirements = 'No disponible'
           } else {
           	$scope.requirements = response.minRequirements
+          	console.log(response.minRequirements)
           }
           if (!response.experienceMin) {
           	$scope.experience = 'No disponible'
