@@ -190,12 +190,28 @@
         background-color: transparent;
     }
     
-    @media screen and (max-width: 750px) {
+    @media screen and (max-width: 767px) {
         .navimg {
             visibility: hidden;
         }
     }
+
+    .info-details {
+        font-weight: normal;
+    }
+
+    .github-links {
+        color: white;
+    }
+
+    .github-links:hover {
+        color: white;
+    }
     
     #offers {
         padding: 15px;
+    }
+
+    #sub-info {
+        margin-bottom: 1%;
     }

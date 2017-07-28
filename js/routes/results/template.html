@@ -5,7 +5,7 @@
                 <form style="display: inline-block;">
                     <div class="row">
                         <div class="col-lg-8">
-                            <input ng-model="query" class="form-control" placeholder="nodejs uruguay.. ">
+                            <input ng-model="query" class="form-control" placeholder="nodejs mexico.. ">
                         </div>
                         <div class="col-lg-4">
                             <button ng-click="searchOffers(query)">Submit</button>
@@ -28,8 +28,8 @@
     <div class="row" id="offers">
         <div ng-repeat="offer in offers">
             <h3>{{ offer.title }}</h3>
-            <p class="lead">{{ offer.author.name }} · {{ offer.city }}, {{ offer.province.value }}</p>
-            <p>{{ offer.updateDate }}</p>
+            <p id="sub-info" class="lead">{{ offer.author.name }} · {{ offer.city }}, {{ offer.province.value }}</p>
+            <p><span class="glyphicon glyphicon-time"></span> Updated at {{offer.updated | date}}</p>
             <p>{{ offer.minRequirements }}</p>
             <a href="#!/details/{{offer.id}}"><button>View Details<span class="glyphicon glyphicon-chevron-right"></span></button></a>
             <hr>

@@ -3,20 +3,20 @@ angular.module('wevelopersApp')
       var query = $routeParams.query
 
       infojobsFactory.getOffersIngenieros(query)
-                .then(function (offersIngenieros) {
-                  infojobsFactory.getOffersInformatica(query)
-                        .then(function (offersInformatica) {
-                          offers = offersIngenieros.concat(offersInformatica)
-                          if (offers.length !== 0) {
-                            $scope.offers = offers
-                            $location.path('/search-results/' + query)
-                            console.log(offers)
-                          } else {
-                            $scope.notFound = 'No se han encontrado ofertas paras los parámetros de busqueda introducidos'
-                            $location.path('/search-results' + query)
-                          }
-                        })
+        .then(function (offersIngenieros) {
+          infojobsFactory.getOffersInformatica(query)
+                .then(function (offersInformatica) {
+                  offers = offersIngenieros.concat(offersInformatica)
+                  if (offers.length !== 0) {
+                    $scope.offers = offers
+                    $location.path('/search-results/' + query)
+                    console.log(offers)
+                  } else {
+                    $scope.notFound = "We didn't find any result fitting your search 😞"
+                    $location.path('/search-results/' + query)
+                  }
                 })
+        })
 
       $scope.searchOffers = function (query) {
         $scope.offers = []
@@ -31,8 +31,8 @@ angular.module('wevelopersApp')
                             $location.path('/search-results/' + query)
                             console.log(offers)
                           } else {
-                            $scope.notFound = 'No se han encontrado ofertas paras los parámetros de busqueda introducidos'
-                            $location.path('/search-results' + query)
+                            $scope.notFound = "We didn't find any result fitting your search 😞"
+                            $location.path('/search-results/' + query)
                           }
                         })
                 })

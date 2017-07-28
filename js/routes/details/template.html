@@ -12,10 +12,10 @@
             <hr>
             <p class="lead" id="description"> {{offerDetails.description}}</p>
             <hr>
-            <p> Salary: {{offerDetails.minPay.amountValue}} - {{offerDetails.maxPay.amountValue}} {{offerDetails.minPay.periodValue}}</p>
-            <p> Studies: {{offerDetails.studiesMin.value}} </p>
-            <p> Requirements: {{offerDetails.minRequirements}} </p>
-            <p> Minimum Experience: {{offerDetails.experienceMin.value}} </p>
+            <p> Salary: <span class="info-details">{{ salary }}</span></p>
+            <p> Studies: <span class="info-details">{{ studies}}</span> </p>
+            <p> Requirements: <span class="info-details">{{ requirements}}</span> </p>
+            <p> Minimum Experience: <span class="info-details">{{ experience }}</span> </p>
             <hr>
             <a ng-href="{{offerDetails.link}}" target="_blank"><button>Go to the job offer</button></a>
         </div>
