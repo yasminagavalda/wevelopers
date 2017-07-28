@@ -1,6 +1,6 @@
 <h1>WEVELOPERS</h1>
 
-Front-End project developed in summer of 2017 for the Web Developer Bootcamp at Skylab Coders Academy.
+Front-End project developed in summer of 2017 for the Web Developer Bootcamp at <u>Skylab Coders Academy</u>.
 
 This project is a browser based on the Infojobs search engine, focused on developer’s job.
 
