@@ -14,6 +14,7 @@ With the Infojobs API, we have used a proxy developed by Juanma Garrido (https:/
 Technologies: HTML5, CSS3, JavaScript, Angular 1.6.4, Bootstrap.
 ![logos.png](https://github.com/yasminagavalda/wevelopers/blob/master/img/logos.png)
 
+https://yasminagavalda.github.io/wevelopers/
 
 Developed by: 
 - Yasmina Gavaldà: https://github.com/yasminagavalda
